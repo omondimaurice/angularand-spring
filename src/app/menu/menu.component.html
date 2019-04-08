@@ -1,0 +1,12 @@
+<header>
+<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+<ul class="navbar-nav">
+<li><a *ngIf="isUserLogin" routerLink="/welcome/maurice" class="nav-link">Tracom Services limited</a></li>
+<li><a *ngIf="isUserLogin" routerLink="/pos-list" class="nav-link">POS list</a></li>
+</ul>
+<ul class="navbar-nav navbar-collapse justify-content-end">
+<li><a *ngIf="! isUserLogin" routerLink="/login" class="nav-link">Login</a></li>
+<li><a  *ngIf="isUserLogin" routerLink="/logout" class="nav-link">Logout</a></li>
+</ul>
+</nav>
+</header>

@@ -1,0 +1,13 @@
+<h1>Welcome</h1>
+
+<div class="container">
+ <font color="golden">{{name|uppercase}}</font>.You can manage available POS <a routerLink="/pos-list">here </a>
+
+</div>
+<div><button  type="button" class="btn btn-success" name="welcome special" (click)="getWelcomeMessage()"> ClickMe</button>
+</div>
+
+<div *ngIf="getWelcomeMessage">
+<h2>Your customized message</h2>
+{{welcomemessage}}
+</div>

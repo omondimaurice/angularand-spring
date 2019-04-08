@@ -1,0 +1,19 @@
+<h1 >POS</h1>
+
+<div class="container">
+<table  class="table">
+<thead>
+<tr>
+<th>serialNumber</th><th>make</th><th>owner</th><th>timestamp</th>
+</tr>
+</thead>
+<tbody>
+        <tr *ngFor="let pos of poss">
+              <td>{{pos.serialNumber}}</td>
+              <td>{{pos.make}}</td>
+              <td>{{pos.owner}}</td>
+              <td>{{pos.timestamp| date}}</td>
+<tr>
+</tbody>
+</table>
+</div>
